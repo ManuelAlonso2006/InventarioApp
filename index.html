@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <h1>Inventario</h1>
+    <div class="Botones">
+        <a href="{{ url_for('cargar') }}">Cargar Productos</a>
+        <a href="{{ url_for('eliminar') }}">Eliminar Productos</a>
+        <a href="{{ url_for ('listado') }}">Listar Productos</a>
+    </div>
+</body>
+</html>

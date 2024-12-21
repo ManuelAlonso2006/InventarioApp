@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Productos</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <h1>Agregar Productos</h1>
+    <div class="Botones">
+        <a href=" {{url_for('index') }}">Menu</a>
+        <form action="{{ url_for('cargar')}}" method="post">
+        <input type="text" name="Nombre" placeholder="Nombre del producto" required>
+        <input type="number" name="Precio" placeholder="Precio" required>
+        <button type="submit">Agregar</button>
+        <p>{{ mensaje }}</p>
+        </form>
+    </div>
+</body>
+</html>
